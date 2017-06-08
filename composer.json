@@ -3,7 +3,7 @@
     "type": "bdd",
     "version": "1.0",
     "time" : "2016-02-25",
-    "description": "BDD Features to test Baron API",
+    "description": "BDD Features to test example API",
     "require-dev": {
         "behat/behat": "3.*",
         "dafiti/web-api-extension": "0.1.0",
