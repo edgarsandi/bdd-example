@@ -1,0 +1,20 @@
+default:
+  extensions:
+    Behat\WebApiExtension:
+      base_url: http://carmen.dev/campaigns
+    emuse\BehatHTMLFormatter\BehatHTMLFormatterExtension:
+      name: html
+      renderer: Twig
+      file_name: report
+      print_args: true
+      print_outp: true
+      loop_break: true
+  formatters:
+    pretty: ~
+    html:
+      output_path: %paths.base%/report
+      # progress: ~
+  suites:
+    api:
+      paths:    [ %paths.base%/features/api ]
+      contexts: [ ApiFeatureContext ]

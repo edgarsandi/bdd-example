@@ -1,0 +1,5 @@
+behat.yml
+*.lock
+.phpintel
+vendor
+report/*
